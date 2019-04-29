@@ -1,0 +1,307 @@
+* {
+	position: absolute;
+}
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: 'GothamBook', Arial;
+}
+@font-face {
+	font-family: 'GothamBlack';
+	src: url('GothamBlack.eot');
+	src: url('GothamBlack.eot') format('embedded-opentype'),
+		 url('GothamBlack.woff2') format('woff2'),
+		 url('GothamBlack.woff') format('woff'),
+		 url('GothamBlack.ttf') format('truetype'),
+		 url('GothamBlack.svg#GothamBlack') format('svg');
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'GothamBook';
+	src: url('GothamBook.eot');
+	src: url('GothamBook.eot') format('embedded-opentype'),
+		 url('GothamBook.woff2') format('woff2'),
+		 url('GothamBook.woff') format('woff'),
+		 url('GothamBook.ttf') format('truetype'),
+		 url('GothamBook.svg#GothamBook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamBold';
+	src: url('GothamBold.eot');
+	src: url('GothamBold.eot') format('embedded-opentype'),
+		 url('GothamBold.woff2') format('woff2'),
+		 url('GothamBold.woff') format('woff'),
+		 url('GothamBold.ttf') format('truetype'),
+		 url('GothamBold.svg#GothamBold') format('svg');
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Gotham-Bold';
+	src: url('Gotham-Bold.eot');
+	src: url('Gotham-Bold.woff') format('woff'),
+		 url('Gotham-Bold.ttf') format('truetype'),
+		 url('Gotham-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#banner {
+	visibility: hidden;
+}
+#banner.show {
+	visibility: visible;
+}
+#banner {
+	width: 160px;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	overflow: hidden;
+	border: 1px solid #999999;
+}
+.hide {
+	opacity: 0;
+}
+#click_through {
+	z-index: 100000;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+#click_through, #click_through a {
+	left: 0;
+	top: 0;
+}
+#cta {
+	padding: 10px 18px 11px 18px;
+	text-align: center;
+	z-index: 40;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: #1b68b5;
+	color: #ffffff;
+	font-size: 15px;
+	margin: 0 auto;
+	display: inline-block;
+	bottom: 50px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: max-content;
+	width: -moz-max-content;
+    width: -webkit-max-content;
+}
+#wrapper:hover #cta {
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+#tncs-btn {
+	font-family: 'GothamBook', Arial;
+	color: #1b68b5;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 7px;
+	text-align: center;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0px;
+	border: 1px solid #1b68b5;
+	padding: 4px;
+	bottom: -20px;
+	background: #F1F0F0;
+	width: 95px;
+	cursor: pointer;
+	z-index: 1000000;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+#tncs-btn:hover {
+	background: #1b68b5;
+	color: #fff;
+}
+#tncs-fullstage {
+	background: #1b68b5;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	padding: 20px;
+	z-index: 0;
+}
+#tncs-header {
+	font-family: 'GothamBook', Arial;
+	font-size: 10px;
+	position: relative;
+	display: block;
+	font-weight: bold;
+	top: 15px;
+	text-align: center;
+}
+#tncs-copy {
+	font-family: 'GothamBook', Arial;
+	font-size: 10px;
+	position: relative;
+	line-height: 10px;
+	letter-spacing: -1px;
+	display: block;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+#mebank-logo-tc {
+	display: block;
+	top: 500px;
+	left: 0;
+	text-align: center;
+	margin: auto;
+	right: 0;
+}
+#close-btn {
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+#frame1, #frame2, #frame3, #frame4 {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 110px 10px;
+}
+#f1_logo, #f2_logo, #f3_logo, #f4_logo {
+	left: 0;
+	top: 0;
+}
+#f1_text, #f1_text1, #f2_text, #f2_text1, #f3_text, #f3_text1, #f4_text, #f4_text1 {
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+}
+#f1_text, #f2_text, #f3_text, #f4_text {
+	padding-bottom: 5px;
+}
+#rateWrapper, #rateMobile {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 250px 10px 0 10px;
+	opacity: 0;
+}
+#rate_logo {
+	left: 0;
+	top: 0;
+}
+#rate {
+	font-family: GothamBlack, Arial;
+	font-size: 48px;
+	line-height: 28px;
+	letter-spacing: -3px;
+	color: rgb(0, 0, 0);
+	top: 200px;
+	left: 15px;
+}
+#rate_text {
+	font-family: 'Gotham-Bold', Arial;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: -1px;
+	position: relative;
+}
+#rate_text1 {
+	font-family: 'GothamBook', Arial;
+	font-size: 10px;
+	line-height: 10px;
+	letter-spacing: 0px;
+	bottom: 120px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 85%;
+}
+#rate .percentage {
+	display: block;
+	position: relative;
+}
+#rate .percent {
+	right: -30px;
+	top: -5px;
+	font-size: 65%;
+	display: block;
+	letter-spacing: -2px;
+	position: absolute;
+}
+#rate .per-a {
+	right: -23px;
+	font-size: 25%;
+	bottom: -14px;
+	display: block;
+	letter-spacing: -1px;
+	position: absolute;
+}
+#rate sup {
+	vertical-align: top;
+	line-height: 25px;
+	font-size: 60%;
+}
+#f1_image, #f2_image, #f3_image, #f4_image {
+	left: 0;
+	top: 0;
+}
+/*styleCenter*/
+
+#mebank-logo {
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+/*styleLeft*/
+
+#frame1.styleleft #f1_text, #frame1.styleleft #f1_text1 {
+	text-align: center;
+	width: 50%;
+}
+#frame1.styleleft #f1_logo, #frame2.styleleft #f2_logo, #frame3.styleleft #f3_logo, #frame4.styleleft #f4_logo {
+	left: -65px;
+}
+#frame2.styleleft #f2_text, #frame3.styleleft #f3_text, #frame4.styleleft #f4_text {
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	width: 50%;
+}
+#frame2.styleleft #f2_text1, #frame3.styleleft #f3_text1, #frame4.styleleft #f4_text1 {
+	left: 0;
+	right: 0;
+	position: relative;
+	text-align: center;
+	width: 50%;
+}
+#frame2.styleleft #f2_image, #frame3.styleleft #f3_image, #frame4.styleleft #f4_image {
+	left: 0;
+	top: 0;
+}
+#wrapper.styleleft #cta {
+	left: 30%;
+}
